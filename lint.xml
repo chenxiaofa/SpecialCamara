@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak">
+        <ignore path="src\anong\candid\MainActivity.java" />
+    </issue>
+    <issue id="ParserError">
+        <ignore path="src\anong\candid\Controler.java" />
+    </issue>
+</lint>
