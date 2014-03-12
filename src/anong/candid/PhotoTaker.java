@@ -50,6 +50,7 @@ public class PhotoTaker implements SurfaceHolder.Callback{
 		mCamera = Camera.open();
 		Camera.Parameters params = mCamera.getParameters();
 		params.setPictureSize(conf.psize.width, conf.psize.height);
+		params.setPreviewSize(conf.previewSize.width, conf.previewSize.height);
 		if(Integer.valueOf(android.os.Build.VERSION.SDK)<=4)
 			params.set("orientation", "portrait");
 		else

@@ -24,7 +24,7 @@ public class Controler implements Rock.CallBack,PhotoTaker.CallBack,MediaButtonR
 		buttonreveive.addCallBack(this);
 		
 		surface = new SurfaceView(context.getApplicationContext());
-		taker = new PhotoTaker(context,surface,configActivity.cnf);
+		taker = new PhotoTaker(context,surface,configActivity.configure);
 		taker.addCallBack(this);
 		fw = new FloatWindow(context,surface);
 	}

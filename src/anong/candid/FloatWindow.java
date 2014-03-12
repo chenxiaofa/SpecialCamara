@@ -46,9 +46,8 @@ public class FloatWindow {
          */
         
         // 设置悬浮窗的长得宽
-        params.width = 300;
-        params.height = 300;
-        
+        params.width = configActivity.configure.previewSize.width;
+        params.height = configActivity.configure.previewSize.height;
         // 设置悬浮窗的Touch监听
         Init();
         v.setOnTouchListener(new View.OnTouchListener() {
